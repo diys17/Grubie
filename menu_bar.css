@@ -1,0 +1,27 @@
+#menu {
+	width: 1024px;
+	height: 40px;
+	background-color: gray;
+}
+
+#menu ul {
+	display: inline;
+	padding-left: 0px;
+	float: right;
+	margin: 10px;
+}
+
+#menu ul li {
+	display: inline;
+	border-left: solid 1px black;
+	text-decoration: none;
+	color: black;
+}
+
+#menu li {
+	padding: 0px 10px 0px 10px; /* 메뉴 사이의 간격 조절 */
+}
+
+#menu ul li:first-child {
+	border-left: none;
+}
