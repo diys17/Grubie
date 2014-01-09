@@ -11,6 +11,9 @@
 		<link href="./_AXJ/ui/default/AXJ.css" rel="stylesheet" type="text/css">
 	</head>
 	<body style="margin-left: auto; margin-right: auto; width: 71%;">
+		<?php
+			include 'top.php';
+		?>
 		<script>
 			var editor = new AXEditor();
 
@@ -41,18 +44,18 @@
 		</script>
 		
 		<center>
-		<form name="write_form" method="get" action="insert.php" onsubmit="submitProcess()">
+
+		<form name="write_form" method="post" action="insert.php" onsubmit="submitProcess()">
 		<table width="580" border="0" cellspacing="1" cellpadding="2" bgcolor="#777777">
 		<tr>
 		<td height="20" align="center" bgcolor="#999999"><font color="white"><b>글 쓰 기</b></font></td>
 		</tr>
-
 		<tr>
 		<table>
 		<tr>
 		<td width="60" align="left">이름</td>
 		<td>
-		<input type="text" name="writer" size="20" maxlength="10" />
+		<input type="text" name="name" size="20" maxlength="10" />
 		</td>
 		</tr>
 		<tr>
@@ -78,7 +81,7 @@
 		<td>
 			<div id="editorContainer"></div>
 			<input type="text" name="content" id="editorContent" style="display:none"></input>
-		<!--<textarea name="content" cols="65" rows="15"></textarea>--></td>
+		</td>
 		</tr>
 		<tr>
 		<td colspan="10" align="center">
