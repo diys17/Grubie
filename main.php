@@ -13,7 +13,7 @@
 		<script type="text/javascript" src="/_AXJ/lib/AXJ.js"></script>
 		<script type="text/javascript" src="/_AXJ/lib/AXEditor.js"></script>
 	</head>
-	<body style="margin-left: auto; margin-right: auto; margin-top: 0; width: 71%">
+	<body style="margin-left: auto; margin-right: auto; margin-top: 0;">
 		<?php
 			include 'top.php';
 		?>
