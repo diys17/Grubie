@@ -18,7 +18,7 @@
 			include 'top.php';
 		?>
 		<br>
-		<div style="width: 100%; border-style: solid;">
+		<div style="width: 100%">
 			<?php
 			if (isset($_SESSION['p_id'])) {
 				phpinfo();

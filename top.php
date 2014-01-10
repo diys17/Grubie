@@ -54,12 +54,12 @@
 						</ul>
 					</li>
 				</ul>
-				<form class="navbar-form navbar-left" role="search">
+				<form class="navbar-form navbar-left" role="search" method="post" action="login_process.php" >
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="ID">
+						<input type="text" class="form-control" name="id" placeholder="ID">
 					</div>
 					<div class="form-group">
-						<input type="password" class="form-control" placeholder="Password">
+						<input type="password" class="form-control" name="pw" placeholder="Password">
 					</div>
 					<button type="submit" class="btn btn-default">
 						Submit

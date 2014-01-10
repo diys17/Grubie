@@ -12,7 +12,7 @@ $connect = ys_connect($host, $dbid, $dbpass, $dbname);
 $id = $_POST['id'];
 $passwd = $_POST['pw'];
 $email = $_POST['email'];
-$phone = $_POST['ph_num1'].$_POST['ph_num2'].$_POST['ph_num3'];
+$phone = $_POST['phone'];
 // id 중복검사
 // 중복이 안된다면 insert
 
