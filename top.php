@@ -54,40 +54,20 @@
 						</ul>
 					</li>
 				</ul>
-				<form class="navbar-form navbar-left" role="search" method="post" action="login_process.php" >
+				<form class="navbar-form navbar-right" role="search" method="post" action="login_process.php" >
 					<div class="form-group">
 						<input type="text" class="form-control" name="id" placeholder="ID">
 					</div>
 					<div class="form-group">
 						<input type="password" class="form-control" name="pw" placeholder="Password">
 					</div>
-					<button type="submit" class="btn btn-default">
-						Submit
-					</button>
+					<div class="form-group">
+						<button type="submit" class="btn btn-default form-control">
+							Submit
+						</button>
+					</div>
+					
 				</form>
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="#">Link</a>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="#">Action</a>
-							</li>
-							<li>
-								<a href="#">Another action</a>
-							</li>
-							<li>
-								<a href="#">Something else here</a>
-							</li>
-							<li class="divider"></li>
-							<li>
-								<a href="#">Separated link</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
 			</div><!-- /.navbar-collapse -->
 		</nav>
 	</body>
