@@ -38,7 +38,7 @@
 				</script>";
 			//로그인폼에 웰컴메시지를 띄우고, 로그인버튼 대신에 로그아웃버튼을 띄운다..
 		}
-	} else { //이미 로그인 되어 있는 상태일때..  
+	} else {  
 		echo "<script>
 				window.location.replace('join.php');
 				</script>";

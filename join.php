@@ -10,38 +10,43 @@
 		<script src="member.js"></script>
 	</head>
 	<body>
-		<div style="padding: 10">
-			<a href="./main.php">홈</a> &gt; 회원 정보 &gt; <a href="./join.php">회원 가입</a>
+		<?php
+		include 'top.php';
+		?>
+		<div class="bs-header col-sm-offset-3">
+			<h1>회원 가입<small>sign up</small></h1>
 		</div>
 		<br>
-		<form class="form-horizontal" method="post" action="join_post.php">
+		<form name="join_form" class="form-horizontal" method="post" action="join_post.php" >
 			<div class="form-group">
-				<label for="exampleInputID" class="col-sm-2 control-label">ID</label>
+				<label for="id" class="col-sm-offset-2 col-sm-2 control-label">ID</label>
 				<div class="col-sm-4">
-					<input type="text" class="form-control" id="exampleInputID" name="id" placeholder="아이디"/>
+					<input type="text" class="form-control" id="id" name="id" placeholder="아이디"/>
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="exampleInputPassword" class="col-sm-2 control-label">Password</label>
+				<label for="pw" class="col-sm-offset-2 col-sm-2 control-label">Password</label>
 				<div class="col-sm-4">
-					<input type="password" class="form-control" id="exampleInputPassword" name="pw" placeholder="비밀번호"/>
+					<input type="password" class="form-control" id="pw" name="pw" placeholder="비밀번호"/>
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="exampleInputEmail" class="col-sm-2 control-label">Email address</label>
+				<label for="email" class="col-sm-offset-2 col-sm-2 control-label">Email address</label>
 				<div class="col-sm-4">
-					<input type="email" class="form-control" id="exampleInputEmail" name="email" placeholder="이메일"/>
+					<input type="email" class="form-control" id="email" name="email" placeholder="이메일"/>
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="exampleInputPhone" class="col-sm-2 control-label">Phone</label>
+				<label for="phone" class="col-sm-offset-2 col-sm-2 control-label">Phone</label>
 				<div class="col-sm-4">
-					<input type="text" class="form-control" id="exampleInputPhone" name="phone" placeholder="연락처"/>
+					<input type="text" class="form-control" id="phone" name="phone" placeholder="연락처"/>
 				</div>
 			</div>
 			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-primary">가입하기</button>
+				<div class="col-sm-offset-4 col-sm-4" >
+					<button type="button" class="btn btn-primary btn-block" onclick="checkInput()">
+						가입하기
+					</button>
 				</div>
 			</div>
 		</form>

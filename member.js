@@ -4,38 +4,31 @@
 var id_check_flag = false;
 
 function checkInput() {
-	var from = document.join_form;
+	var form = document.join_form;
 
-	if (!join_form.id.value) {
+	if (!form.id.value) {
 		alert("아이디(ID)를 입력하세요!");
-		join_form.id.focus();
+		form.id.focus();
 		return;
 	}
-	if (!IsID(join_form.id.name)) {
+	/*if (!IsID(form.id.name)) {
 		alert("아이디는 4~10자의 영문소문자 숫자 또는 조합된 문자열이어야 합니다!");
-		join_form.id.focus();
-		join_form.id.select();
+		form.id.focus();
+		form.id.select();
 		return;
-	}
-	if (!join_form.pw.value) {
+	}*/
+	if (!form.pw.value) {
 		alert("비밀번호를 입력하세요!");
 		form.pw.focus();
 		return;
 	}
-	if (!IsPW(join_form.pw.name)) {
+/*	if (!IsPW(form.pw.name)) {
 		alert("비밀번호는 4~10자의 영문자나 숫자 또는 조합된 문자열이어야 합니다!");
-		join_form.pw.focus();
-		join_form.pw.select();
+		form.pw.focus();
+		form.pw.select();
 		return;
-	}
-	if (join_form.pw.value != join_form.pw2.value) {
-		alert("입력하신 비밀번호가 일치하지 않습니다.\n 다시 확인하고 입력해 주십시오!");
-		join_form.pw2.focus();
-		join_form.pw2.select();
-		return;
-	}
-
-	join_form.submit();
+	}*/
+	form.submit();
 }
 
 function check_ID_Window(ref) {
